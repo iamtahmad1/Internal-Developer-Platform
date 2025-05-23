@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR_USERNAME/YOUR_GITOPS_REPO
+    repoURL: https://github.com/iamtahmad1/Internal-Developer-Platform.git
     targetRevision: HEAD
     path: clusters/dev/infra/nginx-ingress
   destination:
