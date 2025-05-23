@@ -98,9 +98,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/iamtahmad1/kind-k8s-clusters.git
+    repoURL: git@github.com:iamtahmad1/Internal-Developer-Platform.git
     targetRevision: main
-    path: argocd
+    path: clusters/dev/apps
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
