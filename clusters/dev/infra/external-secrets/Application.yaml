@@ -4,15 +4,21 @@ metadata:
   name: external-secrets
   namespace: argocd
 spec:
-  destination:
-    namespace: external-secrets
-    server: https://kubernetes.default.svc
   project: default
   source:
-    path: clusters/dev/infra/external-secrets/base
-    repoURL: https://github.com/your/repo.git
-    targetRevision: HEAD
+    repoURL: https://charts.external-secrets.io
+    chart: external-secrets
+    targetRevision: 0.9.19
+    helm:
+      releaseName: external-secrets
+      values: |
+        installCRDs: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: external-secrets
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
