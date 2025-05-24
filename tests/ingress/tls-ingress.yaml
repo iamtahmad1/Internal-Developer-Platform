@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: echo-ingress
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: "ca-cluster-issuer"  # your ClusterIssuer name
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - tls-echo.172.20.255.200.nip.io   # replace with your EXTERNAL-IP from MetalLB
+    secretName: echo-tls
+  rules:
+  - host: tls-echo.172.20.255.200.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: echo  # your backend service name
+            port:
+              number: 80
