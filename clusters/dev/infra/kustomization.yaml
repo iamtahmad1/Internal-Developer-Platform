@@ -1,4 +1,3 @@
 resources:
   - nginx-ingress/Application.yaml
-  - cert-manager/Application.yaml
-  - cert-manager/
+  - cert-manager/Appplication.yaml
