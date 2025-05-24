@@ -1,0 +1,6 @@
+resources:
+  - 01-selfsigned-issuer.yaml
+  - 02-root-certificate.yaml
+  - 03-intermediate-issuer.yaml
+  - 04-ca-clusterissuer.yaml
+
