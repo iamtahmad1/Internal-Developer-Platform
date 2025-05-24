@@ -2,4 +2,4 @@ resources:
   - nginx-ingress/Application.yaml
   - cert-manager/Application.yaml
   - cert-manager/cert-manager-bootstrap-application.yaml
-  - monitoring/kustomization.yaml
+  - monitoring/
