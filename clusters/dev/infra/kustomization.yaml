@@ -5,4 +5,4 @@ resources:
   - monitoring/
   - vault/
   - external-secrets/Application.yaml
-  - external-secrets/base
+  - external-secrets/external-secrets-bootstrap-application.yaml
