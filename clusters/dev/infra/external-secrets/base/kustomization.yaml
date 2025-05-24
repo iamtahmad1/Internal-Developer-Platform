@@ -1,0 +1,3 @@
+resources:
+  - secretstore.yaml
+  - externalsecret.yaml
