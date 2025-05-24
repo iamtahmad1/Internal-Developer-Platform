@@ -3,3 +3,4 @@ resources:
   - cert-manager/Application.yaml
   - cert-manager/cert-manager-bootstrap-application.yaml
   - monitoring/
+  - vault/

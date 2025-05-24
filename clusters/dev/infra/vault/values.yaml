@@ -1,0 +1,18 @@
+server:
+  dev:
+    enabled: true
+  dataStorage:
+    enabled: false
+  standalone:
+    enabled: true
+  ha:
+    enabled: false
+
+ui:
+  enabled: true
+
+injector:
+  enabled: false
+
+global:
+  tlsDisable: true
