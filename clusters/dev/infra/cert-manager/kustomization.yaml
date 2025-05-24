@@ -1,0 +1,6 @@
+resources:
+  - Application.yaml
+  - bootstrap/01-selfsigned-issuer.yaml
+  - bootstrap/02-root-certificate.yaml  
+  - bootstrap/03-intermediate-issuer.yaml
+  - bootstrap/04-ca-clusterissuer.yaml
