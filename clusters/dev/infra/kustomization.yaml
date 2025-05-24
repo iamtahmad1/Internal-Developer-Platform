@@ -1,2 +1,2 @@
 resources:
-  - ingress-nginx/Application.yaml
+  - nginx-ingress/Application.yaml
