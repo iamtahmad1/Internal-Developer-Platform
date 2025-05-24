@@ -4,5 +4,5 @@ resources:
   - cert-manager/cert-manager-bootstrap-application.yaml
   - monitoring/
   - vault/
-  - external-secrets.io/Application.yaml
+  - external-secrets/Application.yaml
   - external-secrets/base
