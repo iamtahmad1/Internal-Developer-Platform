@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/iamtahmad1/Internal-Developer-Platform.git
     targetRevision: HEAD
-    path: clusters/dev/apps
+    path: clusters/dev/infra
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

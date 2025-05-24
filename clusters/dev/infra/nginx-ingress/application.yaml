@@ -6,15 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://kubernetes.github.io/ingress-nginx
+    repoURL: https://kubernetes.github.io/ingress-nginx  # Remote Helm repo
     chart: ingress-nginx
     targetRevision: 4.10.0
     helm:
-      values: |
-        controller:
-          replicaCount: 2
-          ingressClassResource:
-            default: true
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
